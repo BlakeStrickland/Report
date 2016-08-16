@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'dashboards/home'
+
+  get 'dashboards/report'
+
   resources :reports
   root 'sessions#new'
 
