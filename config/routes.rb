@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
+  root 'dashboards#home'
+
   get 'dashboards/home'
 
   get 'dashboards/report'
 
   resources :reports
-  root 'sessions#new'
-
+  
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 
