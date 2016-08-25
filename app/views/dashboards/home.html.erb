@@ -32,12 +32,8 @@
     </nav>
     <div class="navigation-tools">
       <div class="search-bar">
-        <form role="search">
-          <input type="search" placeholder="Enter Search" />
-          <button type="submit">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
-          </button>
-        </form>
+        <%= link_to "Home", dashboards_home_path %> |
+        <%= link_to "Report(s)", dashboards_report_path %>
       </div>
     </div>
   </div>
@@ -50,8 +46,7 @@
 <h4>A fully functional, plug and play, reporting server on a stick.</h4>
 
 
-<%= link_to "Home", dashboards_home_path%>
-<%= link_to "Report(s)", dashboards_report_path%>
+
 
 
 <ol>
@@ -68,11 +63,11 @@
   <div class="footer-links">
     <ul>
       <li><h3>Functions as a full-service Dashboard, Reporting or Audit device.</h3></li>
-      <li><a href="javascript:void(0)">Connects to any HDMI Display Device</a></li>
-      <li><a href="javascript:void(0)">No software to install</a></li>
-      <li><a href="javascript:void(0)">Requires no programming</a></li>
-      <li><a href="javascript:void(0)">User-friendly</a></li>
-      <li><a href="javascript:void(0)"><span id="blue">Produces presentation-style reports and graphs</span></a></li>
+      <li>Connects to any HDMI Display Device</li>
+      <li>No software to install</li>
+      <li>Requires no programming</li>
+      <li>User-friendly</li>
+      <li><span id="blue">Produces presentation-style reports and graphs</span></li>
     </ul>
   </div>
 
